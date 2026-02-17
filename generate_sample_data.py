@@ -32,8 +32,8 @@ data['purchase_amount'][anomaly_indices] = np.random.uniform(8000, 15000, 50)
 df = pd.DataFrame(data)
 
 # Save to CSV
-df.to_csv('data/raw/sample_data.csv', index=False)
-print("✅ Sample data generated: data/raw/sample_data.csv")
-print(f"📊 Shape: {df.shape}")
-print("\n🔍 First 5 rows:")
+df.to_csv('input/sample_data.csv', index=False)
+print("Sample data generated: input/sample_data.csv")
+print(f"Shape: {df.shape}")
+print("\nFirst 5 rows:")
 print(df.head())
